@@ -1,0 +1,26 @@
+{
+  "name": "proyecto-mondine",
+  "version": "1.0.0",
+  "description": "Portfolio personal de Javier Mondine - Desarrollador Web Full Stack",
+  "main": "index.html",
+  "scripts": {
+    "build:css": "npx cssnano style.css dist/style.min.css",
+    "build:js": "npx terser app.js -o dist/app.min.js --compress --mangle",
+    "build": "npm run build:css && npm run build:js",
+    "serve": "npx http-server -p 8080 -c-1"
+  },
+  "keywords": [
+    "portfolio",
+    "web-development",
+    "full-stack",
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Javier Mondine",
+  "license": "MIT",
+  "devDependencies": {
+    "cssnano-cli": "^1.0.5",
+    "terser": "^5.16.0",
+    "http-server": "^14.1.1"
+  }
+}
